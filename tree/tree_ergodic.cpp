@@ -104,6 +104,7 @@ public:
 		stack<TreeNode*> s;
 		s.push(root);
 
+		// 压栈，对于先序遍历来说，先压右子树，后压左子树
 		while (!s.empty()) {
 			TreeNode* top = s.top();
 			s.pop();
@@ -119,6 +120,7 @@ public:
 		stack<TreeNode*> s;
 		//s.push(root);
 		TreeNode* cur = root;
+		// 中序遍历，需先遍历左子树，讲左子树全部压栈
 		while (cur || !s.empty()) {
 			while (cur) {
 				s.push(cur);
