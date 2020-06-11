@@ -54,7 +54,7 @@ public:
         if (!root) return 0;  //递归结束
         int left = minDepth(root->left);
         int right = minDepth(root->right);
-        if (!left || !right) return left + right + 1;  //如果有一个空，则+1
+        if (!left || !right) return left + right + 1;  //这里要注意，如果只有一个为空的话，那么这条子树的最小深度就为这颗子树的深度。
         return min(left, right) + 1;  //否则最小值+1
     }
 };
