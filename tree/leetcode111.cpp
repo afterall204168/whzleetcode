@@ -66,7 +66,7 @@ int main() {
 	int n = a.size();
 	TreeNode* root1 = insert_tree(a, n, 0);
 	preorderTraverse(root1);
-
+	
 	// 层序遍历
 	Solution s1;
 	cout<<s1.minDepth(root1);
