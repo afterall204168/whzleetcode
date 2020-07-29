@@ -17,3 +17,6 @@ a daily topic
 
 begin a question randomly
 
+#### learning
+
+I was so rubbish that I had to write it down
